@@ -39,7 +39,7 @@
 
 1. Κατεβάστε το .zip με τον κώδικα της εφαρμοφης ή αν χρησιμοποιήτε git:
     ```bash
-    git clone https://github.com/Papiqulos/Project_Baseis.git
+    git clone https://github.com/Papiqulos/Project_Baseis_2023.git
     ```
 
 2. Κατεβάστε τις απαραίτητες βιβλιοθήκες:
