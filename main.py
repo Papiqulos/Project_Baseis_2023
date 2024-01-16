@@ -1098,16 +1098,14 @@ class StudentGUI(ctk.CTk):
     def check_captcha(self, captcha_entry, captcha_string):
         '''Ελέγχει αν το captcha που έδωσε ο χρήστης είναι σωστό'''
 
-        # if captcha_entry.get() == captcha_string:
-        #     print("Correct")
-        #     StudentGUI.clear_frame(self, self.contents_frame)
-        #     self.akadhmaiko_app()
-        # else:
-        #     messagebox.showerror("Error", "Wrong captcha")
+        if captcha_entry.get() == captcha_string:
+            print("Correct")
+            StudentGUI.clear_frame(self, self.contents_frame)
+            self.akadhmaiko_app()
+        else:
+            messagebox.showerror("Error", "Wrong captcha")
         
-        StudentGUI.clear_frame(self, self.contents_frame)
-        self.akadhmaiko_app()
-            
+        
 
     def sign_up_to_courses(self):
         '''Δημιουργεί το παράθυρο με την δήλωση μαθημάτων'''
@@ -1779,15 +1777,14 @@ class AdminGUI(ctk.CTk):
 
     def check_captcha(self, captcha_entry, captcha_string):
         '''Ελέγχει αν το captcha είναι σωστό'''
-        # if captcha_entry.get() == captcha_string:
-        #     print("Correct")
-        #     StudentGUI.clear_frame(self, self.contents_frame)
-        #     self.akadhmaiko_app()
-        # else:
-        #     messagebox.showerror("Error", "Wrong captcha")
+        if captcha_entry.get() == captcha_string:
+            print("Correct")
+            AdminGUI.clear_frame(self, self.contents_frame)
+            self.akadhmaiko_app()
+        else:
+            messagebox.showerror("Error", "Wrong captcha")
         
-        StudentGUI.clear_frame(self, self.contents_frame)
-        self.akadhmaiko_app()
+        
 
 
     def akadhmaiko_app(self):
